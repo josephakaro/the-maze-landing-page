@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block Main %}
+  <div class="container-form">
+    <form  action="{{url_for('index.Index')}}">
+      <img class="icon" src="{{ url_for('static', filename='icon/m-white.png')}}" alt="m logo icon" width="20%"/>
+        <header>
+        <h1>
+          Welcome Back!
+        </h1>
+        </header>
+        <input class="input-form" type="email" name="Email", placeholder="Email" required/>
+        <input class="input-form" type="password" name="Password", placeholder="Password" required/>
+        <button class="btn-form" type="submit">Log In</button>
+        <div class="form-link">
+          <a href="#">Reset Password</a>
+          <a href="#">Sign Up!</a>
+        </div>
+    </form>
+  </div>
+{% endblock %}

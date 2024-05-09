@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: black;
+    color: white;
+
+    font-family: "Jaro", sans-serif;
+    font-size: 18px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+input{
+    font: 1em "Jaro", sans-serif;
+}
+
+button{
+    cursor: pointer;
+
+    font-size: large;
+    font-weight: 400;
+
+    border: none;
+
+    padding: 5px;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+
+    border-bottom: 1px solid white;
+
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1em;
+}
+
+
+.icon{
+    color: white;
+}
+
+.container-form{
+    width: 350px;
+    height: 350px;
+
+    border: 2px solid white;
+    border-radius: 5px;
+
+    padding: 20px;
+
+    margin: 100px auto;
+}
+
+.btn-form,
+.input-form{
+    width: 300px;
+    height: 35px;
+    background-color: whitesmoke;
+    color: gray;
+
+    border: none;
+    border-radius: 5px;
+}
+
+.input-form{
+    padding-left: 5px;
+}
+
+.btn-form:hover{
+    color: black;
+    background-color: gray;
+}
+
+.form-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+}
+
+
+.nav-link{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.nav-brand{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.btn-light{
+    border: 1px solid white;
+    color: black;
+    background-color: white;
+}
+
+.btn-dark{
+    border: 1px solid white;
+    color: white;
+}
+
+
+.heroe-section{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYl1QephFXgwWa_eKFF9gUPkoVr7IixbwFTJT8VAlmN3uBb0czbOqY-8HSNLYv9c8WRL0&usqp=CAU) no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 2em;
+
+    padding: 20px;
+
+    padding-left: 200px;
+    padding-top: 60px;
+}
+
+.btn-action{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1em;
+}
+
+.lead{
+    font-size: 36px !important;
+}

@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block Navbar %}
+<nav class="nav">
+    <div class="nav-brand">
+        <img src="{{ url_for('static', filename='icon/m-black.png')}}" alt="m black logo" width="10%"/>
+        <h1>THE MAZE</h1>
+    </div>
+    <div class="nav-link">
+        <ul>
+            <li>
+                <a href="#">
+                    About Us
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Games
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Community
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Support
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    FAQs
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="nav-button">
+        <button class="btn-dark">
+            Download
+        </button>
+        <button class="btn-light">
+            Log In
+        </button>
+    </div>
+</nav>
+{% endblock %}
+
+{% block Main %}
+<div class="heroe-section">
+    <h1 class="lead">Embark on an<br> immersive journey<br> through labyrinthine<br> worlds.</h1>
+    <p>Experience the thrill pf dynamic maze generation and uncover new <br> discovery at every turn.</p>
+    <div class="btn-action">
+        <button class="btn-light">
+            Download
+        </button>
+        <button class="btn-dark">
+            Learn More
+        </button>
+    </div>
+</div>
+{% endblock %}
+{% block Footer %}
+
+{% endblock %}
