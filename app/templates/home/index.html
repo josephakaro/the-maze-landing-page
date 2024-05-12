@@ -9,7 +9,7 @@
     <div class="nav-link">
         <ul>
             <li>
-                <a href="#">
+                <a href="{{url_for('about.About')}}">
                     About Us
                 </a>
             </li>
@@ -40,7 +40,7 @@
             Contact
         </button>
         <button class="btn-light">
-            Support
+            Log In
         </button>
     </div>
 </nav>
@@ -49,7 +49,7 @@
 {% block Main %}
 <div class="heroe-section">
     <h1 class="lead">Embark on an<br> immersive journey<br> through labyrinthine<br> worlds.</h1>
-    <p>Experience the thrill pf dynamic maze generation and uncover new <br> discovery at every turn.</p>
+    <p>Experience the thrill of dynamic maze generation and uncover new <br> discovery at every turn.</p>
     <div class="btn-action">
         <button class="btn-light">
             Download
@@ -61,34 +61,158 @@
 </div>
 <div class="features">
     <div class="col-text">
-        <h1 class="lead">Experience the Unpredictable<br>Dynamic Maze Generation<br>For Endless Adventure.</h1>
-        <p>With our unqinue dynamic maze generation feature, no two games are ever<br> the same. Prepare for an immersive experience filled with excitement and <br> surprises at every turn.</p>
+        <h1 class="lead">Experience the Unpredictable Dynamic Maze Generation For Endless Adventure.</h1>
+        <p>With our unqinue dynamic maze generation feature, no two games are ever the same. Prepare for an immersive experience filled with excitement and surprises at every turn.</p>
         <div class="feature-section">
             <div class="feature-01">
                 <img src="{{ url_for('static', filename='icon/m-black.png')}}" alt="maze logo" width="20%">
                 <h2>Unleash Adventure</h2>
                 <p>
-                    Explore captivating maze that challenge<br>
-                    your skills and keep you engaged from<br>
-                    start to finish.
+                    Explore captivating maze that challenge your skills and keep you engaged from start to finish.
                 </p>
             </div>
             <div class="feature-02">
                 <img src="{{ url_for('static', filename='icon/m-black.png')}}" alt="maze logo" width="20%">
                 <h2>Unleash Adventure</h2>
                 <p>
-                    Embrace on an adventure where each <br>
-                    maze holds secrets waiting to be <br>
-                    uncovered.
+                    Embrace on an adventure where each maze holds secrets waiting to be uncovered.
                 </p>
             </div>
         </div>
     </div>
     <div class="col-img">
-        <img src="{{ url_for('static', filename='img/maze.jpg')}}" alt='features' width="60%"/>
+        <img src="{{ url_for('static', filename='img/maze.jpg')}}" alt='features' width="70%"/>
+    </div>
+</div>
+<div class="feature-section col">
+        <div class="col-text">
+            <h1 class="lead">Experience Stunning Graphics Powered by SDL2 Engine</h1>
+            <p>immerse yourself in mesmerizing landscapes and intricate designs as you navigate through each level. The Cutting-edge SDL2 Engine brings the game to life with its stunning graphics.</p>
+        </div>
+        <div class="col-img">
+            <img src="{{ url_for('static', filename='img/maze.jpg')}}" alt='features' width="70%"/>
+        </div>
+</div>
+<div class="feature-section col">
+    <div class="col-text">
+        <img src="{{ url_for('static', filename='icon/m-black.png')}}" alt="maze logo" width="15%"/>
+        <h1 class="lead">Challenge Yourself with Varying Difficulty Levels.</h1>
+        <p>Whether you're beginner or an experienced player, our game offers a range of difficulty levels to suit your skills. Test your limits and push yourself to new heights of mastery.</p>
+        <div class="btn-action">
+            <button class="btn-dark">Play</button>
+            <button>Join ></button>
+        </div>
+    </div>
+    <div class="col-img">
+        <img src="{{ url_for('static', filename='img/maze.jpg')}}" alt='features' width="70%"/>
+    </div>
+</div>
+<div class="col-profile">
+    <div class="row">
+        <img src="{{ url_for('static', filename='icon/m-black.png')}}" alt="maze logo" width="5%"/>
+        <h3>The Maze Game challenged me in the ways I never expected. Each level presented a unique puzzle that kept me engaged and excited to discover what was around the next corner. The community aspect of the game added an extra layer of enjoyment, as I was able to connect with fellow players and share strategies.</h3>
+        <div class="profile">
+            <img src="{{ url_for('static', filename='icon/m-black.png')}}" alt="maze logo" width="5%"/>
+            <p>Joseph A.</p>
+            <p>Gaming Enthusiast, <span>Ukoth Corp.</span></p>
+        </div>
+    </div>
+</div>
+<div class="feature-section col">
+    <div class="col-text">
+        <h1 class="lead">Connect with the Maze Community</h1>
+        <p>Join fellow gamers and explore the maze together. Share tips stategies, and epic quests.</p>
+        <div class="btn-action">
+            <button class="btn-light">Connect</button>
+            <button class="btn-dark">Join</button>
+        </div>
+    </div>
+    <div class="col-img">
+        <img src="{{ url_for('static', filename='img/maze.jpg')}}" alt='features' width="70%"/>
+    </div>
+</div>
+<div class="row">
+    <h1 class="lead">Stay Updated with Our Newsletter</h1>
+    <p>Subscribe to recieve the latest updates, tips and community events.</p>
+    <div class="subscribe">
+        <input type="email" name="email" placeholder="Enter your email"/>
+        <button class="btn-light">Sign Up</button>
+    </div>
+    <p>by signing up, you agree to our Terms and Conditions.</p>
+</div>
+<div class="faqs">
+    <div class="col-faq">
+            <h1>FAQs</h1>
+            <p>Find answers to commonly asked questions about the maze Game.</p>
+            <button class="btn-dark">Contact</button>
+    </div>
+    <div class="col-questions">
+        <div class="col-faq box">
+            <h2>How to Play</h2>
+            <p>To play the maze Game, simply navigate through the maze using the arrow keys on your keyboard.The objective is to reach the exit while avoiding obstacles and collecting power-ups along the way.</p>
+        </div>
+        <div class="col-faq box">
+            <h2>Is is free?</h2>
+            <p>Yes, the Maze Game is free to download and play. However, there may be in-app purchases available for additional features or content.</p>
+        </div>
+        <div class="col-faq box">
+            <h2>Can I customize my charater?</h2>
+            <p>Yes, you can Customize your charater in the Maze Game. There are various skins and accessories available that you can unlock or purchase.</p>
+        </div>
+        <div class="col-faq box">
+            <h2>How often are updates?</h2>
+            <p>We strive to provide regular updates to the Maze Game, including bug fixes, new levels, and exciting features, Stay tuned for the latest updates!</p>
+        </div>
+        <div class="col-faq box">
+            <h2>How to join the community?</h2>
+            <p>To join the Maze Game community, simply create an account on our official website or connect with other players through our official forums and social media channels.</p>
+        </div>
     </div>
 </div>
 {% endblock %}
 {% block Footer %}
-    <!-- <p>&copy;2024 Joseph Akaro, All rights Reservered.</p> -->
+<div class="footer">
+    <div class="footer-menu">
+        <div class="footer-subscribe">
+            <h1 class="lead">Stay Updated with Our Newsletter</h1>
+            <p>Stay up to date on the latest features and releases by joining our newsletter.</p>
+            <div class="subscribe">
+                <input type="email" name="email" placeholder="Your email address"/>
+                <button class="btn-light">Subscribe</button>
+            </div>
+            <p>By subscribing, you agree to our Privacy Policy and commite to recieve updates from our Company.</p>
+        </div>
+        <div class="footer-links">
+            <div class="Company">
+                <h2>Company</h2>
+                <a href="{{url_for('index.Index')}}">Home</a>
+                <a href="{{url_for('about.About')}}">About Us</a>
+                <a href="{{url_for('contact.Contact')}}">Contact</a>
+            </div>
+            <div class="Community">
+                <h2>Community</h2>
+                <a href="{{url_for('login.Login')}}">Login</a>
+                <a href="{{url_for('forum.Forum')}}">Forum</a>
+                <a href="{{url_for('testimonial.Testimonial')}}">Testimonials</a>
+                <a href="#">Github</a>
+            </div>
+            <div class="Socials">
+                <h2>Follow Us</h2>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-rights">
+        <p>&copy;2024 Joseph Akaro, All rights Reservered.</p>
+        <div class="footer-terms">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Cookies Settings</a>
+        </div>
+    </div>
+</div>
 {% endblock %}
