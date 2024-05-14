@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Login{% endblock %}
+{% block title %} {% endblock %}
 {% block Navbar %}
 <nav class="nav">
     <div class="nav-brand">
@@ -36,12 +36,12 @@
         </ul>
     </div>
     <div class="nav-button">
-        <button class="btn-dark">
+        <a class="btn-dark" href="{{url_for('contact.Contact')}}">
             Contact
-        </button>
-        <button class="btn-light">
+        </a>
+        <a class="btn-light" href="{{url_for('login.Login')}}">
             Log In
-        </button>
+        </a>
     </div>
 </nav>
 {% endblock %}

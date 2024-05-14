@@ -6,7 +6,7 @@
     background-color: black;
     color: white;
 
-    font-family: "Jaro", sans-serif;
+    font-family: "Inter"sans-serif;
     font-size: 18px;
 
 }
@@ -17,7 +17,7 @@ a{
 }
 
 input{
-    font: 1em "Jaro", sans-serif;
+    font: 1em "Inter",sans-serif;
 }
 
 button{
@@ -160,6 +160,8 @@ form{
     width: 100%;
     height: 90dvh;
     margin: 20px auto;
+
+    background-image: url("/app/static/img/heroe_section.png");
 
     display: flex;
     flex-direction: column;
